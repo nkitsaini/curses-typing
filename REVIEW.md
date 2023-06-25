@@ -18,18 +18,18 @@
 `main:32` => Another approch is this, which does not require us to handle DOWN/UP seperately
 ```py
 if key==curses.KEY_UP:
-    current_row_idx-=1
-		current_row_idx = current_row_idx % len(menu)
+	current_row_idx-=1
+	current_row_idx = current_row_idx % len(menu)
 elif key==curses.KEY_DOWN:
-	  current_row_idx+=1
-		current_row_idx = current_row_idx % len(menu)
+	current_row_idx+=1
+	current_row_idx = current_row_idx % len(menu)
 ```
 Or 
 ```py
 if key==curses.KEY_UP:
-    current_row_idx-=1
+ 	current_row_idx-=1
 elif key==curses.KEY_DOWN:
-	  current_row_idx+=1
+	current_row_idx+=1
 ...
 
 current_row_idx = curr_row_idx % len(menu)
@@ -88,8 +88,8 @@ GREEN = None
 RED = None
 
 def init_colors():
-  global GREEN
-  global RED
+	global GREEN
+	global RED
 
 	curses.init_pair(1, curses.COLOR_BLACK, cursese.COLOR_GREEN)
 	curses.init_pair(2, curses.COLOR_BLACK, cursese.COLOR_RED)
