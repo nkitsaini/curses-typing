@@ -1,5 +1,5 @@
 - Debugging:
-	- Set up logging that will write to a file. You can your code as `python3 run.py --log abc.log`
+	- Set up logging that will write to a file. This will simplify debugging. Search python logging.
 
 - Linting:
 	- Set up a simple linting and format on save to keep the code consistent.
